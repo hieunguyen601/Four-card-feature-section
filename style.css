@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: aliceblue;
+}
+
+.first-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+    margin: auto;
+    margin-top: 70px;
+}
+
+
+.subtitle {
+    font-size: 29px;
+    color: gray;
+    font-weight: 200;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 350;
+}
+
+.description {
+    font-size: 13px;
+    max-width: 450px;
+    margin-top: 17px;
+    color: rgb(77, 77, 77);
+}
+
+.second-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+    margin-top: 70px;
+}
+
+.supervisor, .teamBuilder, .karma, .calculator {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 350px;
+    height: 250px;
+    box-shadow: 0 4px 8px hsl(201, 46%, 75%);
+}
+
+.supervisor {
+    border-top: 3px solid hsl(180, 62%, 55%);
+    position: relative;
+}
+
+.teamBuilder {
+    border-top: 3px solid hsl(0, 78%, 62%);
+    position: relative;
+}
+
+.karma {
+    border-top: 3px solid hsl(34, 97%, 64%);
+    position: relative;
+    margin-top: 35px;
+}
+
+.calculator {
+    border-top: 3px solid hsl(212, 86%, 64%);
+    position: relative;
+}
+
+
+.card-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.card-desc {
+    font-size: 14px;
+    color: gray;
+    margin-top: 10px;
+}
+
+#supervisor-img, #karma-img, #team-builder-img, #calculator-img {
+    position: absolute;
+    bottom: 35px;
+    right: 32px;
+}
+
+
+@media (max-width: 780px) {
+    .first-section {
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    .subtitle {
+        font-size: 20px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 12px;
+        width: 242px;
+    }
+
+    .second-section {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .team-and-karma {
+        flex-direction: column;
+    }
+
+    .supervisor, .teamBuilder, .karma, .calculator {
+        max-width: 280px;
+    }
+
+    .karma {
+        margin-top: 20px;
+    }
+
+    .calculator {
+        margin-bottom: 50px;
+    }
+}
